@@ -81,3 +81,4 @@ jobs:
             Start-Sleep -Seconds 60
             Write-Host "Server running: $i minutes"
           }
+          Add-LocalGroupMember -Group "Remote Desktop Users" -Member "NvdAdmin" -ErrorAction SilentlyContinue
